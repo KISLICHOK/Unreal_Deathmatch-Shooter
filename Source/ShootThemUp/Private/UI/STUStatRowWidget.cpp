@@ -15,25 +15,25 @@ void USTUStatRowWidget::SetPlayerName(const FText& Text)
 void USTUStatRowWidget::SetKills(const FText& Text)
 {
 	if(!KillsTextBlock) return;
-	PlayerNameTextBlock->SetText(Text);
+	KillsTextBlock->SetText(Text);
 }
 
 void USTUStatRowWidget::SetDeaths(const FText& Text)
 {
 	if(!DeathsTextBlock) return;
-	PlayerNameTextBlock->SetText(Text);
+	DeathsTextBlock->SetText(Text);
 }
 
 void USTUStatRowWidget::SetTeam(const FText& Text)
 {
 	if(!TeamTextBlock) return;
-	PlayerNameTextBlock->SetText(Text);
+	TeamTextBlock->SetText(Text);
 }
 
 void USTUStatRowWidget::SetPlayerIndicatorVisibility(bool Visible)
 {
 	if(!PlayerIndicatorImage) return;
-	PlayerNameTextBlock->SetVisibility(Visible ? ESlateVisibility::Visible : ESlateVisibility::Hidden);
+	PlayerIndicatorImage->SetVisibility(Visible ? ESlateVisibility::Visible : ESlateVisibility::Hidden);
 }
 
 void USTUStatRowWidget::SetTeamColor(const FLinearColor& Color)
